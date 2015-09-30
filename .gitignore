@@ -9,6 +9,7 @@
 *.DS_Store
 [Tt]humbs.db 
 _ReSharper.*
+*.lock.json
 
 # Ignore NCrunch cache files.
 *.crunchproject.local.xml

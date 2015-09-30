@@ -1,0 +1,22 @@
+{
+    "version": "1.10.0.0",
+    "description": "Sprache is a simple, lightweight library for constructing parsers directly in C# code.",
+    "authors": [ "Nicholas Blumhardt and Contributors" ],
+    "owners": [ "Nicholas Blumhardt, Mike Hadlow" ],
+    "summary": "",
+    "tags": [ "Parser", "Parsers", "Monad" ],
+    "projectUrl": "https://github.com/sprache/Sprache",
+    "licenseUrl": "https://github.com/sprache/Sprache/blob/master/licence.txt",
+
+    "frameworks": {
+        "dotnet": {
+          "dependencies": {
+            "System.Runtime": "4.0.21-beta-*",
+            "System.Collections": "4.0.11-beta-*",
+            "System.Linq": "4.0.1-beta-*",
+            "System.Text.RegularExpressions": "4.0.11-beta-*",
+            "System.Runtime.Serialization.Primitives": "4.0.11-beta-*"
+          }
+        }
+    }
+}
