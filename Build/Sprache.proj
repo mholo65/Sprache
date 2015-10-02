@@ -6,6 +6,7 @@
         <BuildNumber Condition="'$(BuildNumber)' == ''">0</BuildNumber>
         <BaseDir>$(MSBuildProjectDirectory)\..</BaseDir>
         <OutputDir>$(BaseDir)\bin</OutputDir>
+		<OutputDirDnx>$(BaseDir)\bin.dnx</OutputDirDnx>
         <Tools>$(BaseDir)\Tools</Tools>
         <MSBuildCommunityTasksPath>$(Tools)\MSBuildCommunityTasks</MSBuildCommunityTasksPath>
         <Nunit>$(Tools)\NUnit\2.5</Nunit>
@@ -26,7 +27,10 @@
 
     <ItemGroup>
         <ProjectToBuild Include="$(Source)\Sprache.sln">
-            <Properties>OutputPath=$(OutputDir);Configuration=Release</Properties>
+            <Properties>OutputPath=$(OutputDir);Configuration=Release;Platform=Mixed Platforms</Properties>
+        </ProjectToBuild>
+		<ProjectToBuild Include="$(Source)\Sprache-dnx.sln">
+            <Properties>OutputPath=$(OutputDirDnx);Configuration=Release;Platform=Any CPU</Properties>
         </ProjectToBuild>
     </ItemGroup>
 
